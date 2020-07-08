@@ -31,13 +31,13 @@ function TodosForm(props) {
 
   const handleFilter = (filter) => {
     let filterTitle = "";
-    
+
     if (filter === visibilityFilters.SHOW_ALL) {
-      filterTitle = 'All';
-    } else if (filter=== visibilityFilters.COMPLETED) {
-      filterTitle = 'Completed'
+      filterTitle = "All";
+    } else if (filter === visibilityFilters.COMPLETED) {
+      filterTitle = "Completed";
     } else {
-      filterTitle = 'Incomplete'
+      filterTitle = "Incomplete";
     }
 
     setFilterTitle(filterTitle);
@@ -78,7 +78,7 @@ function TodosForm(props) {
             </InputGroup>
           </Col>
           <Col md="4" sm="4" xs="24">
-            <Button appearance="primary">
+            <Button appearance="primary" type="submit">
               <Icon icon="plus" /> Add
             </Button>
           </Col>
